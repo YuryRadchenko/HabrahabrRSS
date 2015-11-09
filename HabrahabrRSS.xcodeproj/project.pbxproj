@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2D8A1F21BF0ECFA00D2C29C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A1F11BF0ECFA00D2C29C /* main.m */; };
+		D2D8A1F51BF0ECFA00D2C29C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A1F41BF0ECFA00D2C29C /* AppDelegate.m */; };
+		D2D8A1F81BF0ECFA00D2C29C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A1F71BF0ECFA00D2C29C /* ViewController.m */; };
+		D2D8A1FB1BF0ECFA00D2C29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D8A1F91BF0ECFA00D2C29C /* Main.storyboard */; };
+		D2D8A1FE1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A1FC1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodeld */; };
+		D2D8A2001BF0ECFA00D2C29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D8A1FF1BF0ECFA00D2C29C /* Assets.xcassets */; };
+		D2D8A2031BF0ECFA00D2C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D8A2011BF0ECFA00D2C29C /* LaunchScreen.storyboard */; };
+		D2D8A20E1BF0ECFA00D2C29C /* HabrahabrRSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A20D1BF0ECFA00D2C29C /* HabrahabrRSSTests.m */; };
+		D2D8A2191BF0ECFA00D2C29C /* HabrahabrRSSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A2181BF0ECFA00D2C29C /* HabrahabrRSSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2D8A20A1BF0ECFA00D2C29C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D8A1E51BF0ECFA00D2C29C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D8A1EC1BF0ECFA00D2C29C;
+			remoteInfo = HabrahabrRSS;
+		};
+		D2D8A2151BF0ECFA00D2C29C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D8A1E51BF0ECFA00D2C29C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D8A1EC1BF0ECFA00D2C29C;
+			remoteInfo = HabrahabrRSS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2D8A1ED1BF0ECFA00D2C29C /* HabrahabrRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabrahabrRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D8A1F11BF0ECFA00D2C29C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2D8A1F31BF0ECFA00D2C29C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2D8A1F41BF0ECFA00D2C29C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2D8A1F61BF0ECFA00D2C29C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D2D8A1F71BF0ECFA00D2C29C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D2D8A1FA1BF0ECFA00D2C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2D8A1FD1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabrahabrRSS.xcdatamodel; sourceTree = "<group>"; };
+		D2D8A1FF1BF0ECFA00D2C29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2D8A2021BF0ECFA00D2C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2D8A2041BF0ECFA00D2C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D8A2091BF0ECFA00D2C29C /* HabrahabrRSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabrahabrRSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D8A20D1BF0ECFA00D2C29C /* HabrahabrRSSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HabrahabrRSSTests.m; sourceTree = "<group>"; };
+		D2D8A20F1BF0ECFA00D2C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D8A2141BF0ECFA00D2C29C /* HabrahabrRSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabrahabrRSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D8A2181BF0ECFA00D2C29C /* HabrahabrRSSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HabrahabrRSSUITests.m; sourceTree = "<group>"; };
+		D2D8A21A1BF0ECFA00D2C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2D8A1EA1BF0ECFA00D2C29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D8A2061BF0ECFA00D2C29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D8A2111BF0ECFA00D2C29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2D8A1E41BF0ECFA00D2C29C = {
+			isa = PBXGroup;
+			children = (
+				D2D8A1EF1BF0ECFA00D2C29C /* HabrahabrRSS */,
+				D2D8A20C1BF0ECFA00D2C29C /* HabrahabrRSSTests */,
+				D2D8A2171BF0ECFA00D2C29C /* HabrahabrRSSUITests */,
+				D2D8A1EE1BF0ECFA00D2C29C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2D8A1EE1BF0ECFA00D2C29C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2D8A1ED1BF0ECFA00D2C29C /* HabrahabrRSS.app */,
+				D2D8A2091BF0ECFA00D2C29C /* HabrahabrRSSTests.xctest */,
+				D2D8A2141BF0ECFA00D2C29C /* HabrahabrRSSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2D8A1EF1BF0ECFA00D2C29C /* HabrahabrRSS */ = {
+			isa = PBXGroup;
+			children = (
+				D2D8A1F31BF0ECFA00D2C29C /* AppDelegate.h */,
+				D2D8A1F41BF0ECFA00D2C29C /* AppDelegate.m */,
+				D2D8A1F61BF0ECFA00D2C29C /* ViewController.h */,
+				D2D8A1F71BF0ECFA00D2C29C /* ViewController.m */,
+				D2D8A1F91BF0ECFA00D2C29C /* Main.storyboard */,
+				D2D8A1FF1BF0ECFA00D2C29C /* Assets.xcassets */,
+				D2D8A2011BF0ECFA00D2C29C /* LaunchScreen.storyboard */,
+				D2D8A2041BF0ECFA00D2C29C /* Info.plist */,
+				D2D8A1FC1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodeld */,
+				D2D8A1F01BF0ECFA00D2C29C /* Supporting Files */,
+			);
+			path = HabrahabrRSS;
+			sourceTree = "<group>";
+		};
+		D2D8A1F01BF0ECFA00D2C29C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2D8A1F11BF0ECFA00D2C29C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2D8A20C1BF0ECFA00D2C29C /* HabrahabrRSSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2D8A20D1BF0ECFA00D2C29C /* HabrahabrRSSTests.m */,
+				D2D8A20F1BF0ECFA00D2C29C /* Info.plist */,
+			);
+			path = HabrahabrRSSTests;
+			sourceTree = "<group>";
+		};
+		D2D8A2171BF0ECFA00D2C29C /* HabrahabrRSSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2D8A2181BF0ECFA00D2C29C /* HabrahabrRSSUITests.m */,
+				D2D8A21A1BF0ECFA00D2C29C /* Info.plist */,
+			);
+			path = HabrahabrRSSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2D8A1EC1BF0ECFA00D2C29C /* HabrahabrRSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D8A21D1BF0ECFA00D2C29C /* Build configuration list for PBXNativeTarget "HabrahabrRSS" */;
+			buildPhases = (
+				D2D8A1E91BF0ECFA00D2C29C /* Sources */,
+				D2D8A1EA1BF0ECFA00D2C29C /* Frameworks */,
+				D2D8A1EB1BF0ECFA00D2C29C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabrahabrRSS;
+			productName = HabrahabrRSS;
+			productReference = D2D8A1ED1BF0ECFA00D2C29C /* HabrahabrRSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2D8A2081BF0ECFA00D2C29C /* HabrahabrRSSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D8A2201BF0ECFA00D2C29C /* Build configuration list for PBXNativeTarget "HabrahabrRSSTests" */;
+			buildPhases = (
+				D2D8A2051BF0ECFA00D2C29C /* Sources */,
+				D2D8A2061BF0ECFA00D2C29C /* Frameworks */,
+				D2D8A2071BF0ECFA00D2C29C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D8A20B1BF0ECFA00D2C29C /* PBXTargetDependency */,
+			);
+			name = HabrahabrRSSTests;
+			productName = HabrahabrRSSTests;
+			productReference = D2D8A2091BF0ECFA00D2C29C /* HabrahabrRSSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2D8A2131BF0ECFA00D2C29C /* HabrahabrRSSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D8A2231BF0ECFA00D2C29C /* Build configuration list for PBXNativeTarget "HabrahabrRSSUITests" */;
+			buildPhases = (
+				D2D8A2101BF0ECFA00D2C29C /* Sources */,
+				D2D8A2111BF0ECFA00D2C29C /* Frameworks */,
+				D2D8A2121BF0ECFA00D2C29C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D8A2161BF0ECFA00D2C29C /* PBXTargetDependency */,
+			);
+			name = HabrahabrRSSUITests;
+			productName = HabrahabrRSSUITests;
+			productReference = D2D8A2141BF0ECFA00D2C29C /* HabrahabrRSSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2D8A1E51BF0ECFA00D2C29C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Yury Radchenko";
+				TargetAttributes = {
+					D2D8A1EC1BF0ECFA00D2C29C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D2D8A2081BF0ECFA00D2C29C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D2D8A1EC1BF0ECFA00D2C29C;
+					};
+					D2D8A2131BF0ECFA00D2C29C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D2D8A1EC1BF0ECFA00D2C29C;
+					};
+				};
+			};
+			buildConfigurationList = D2D8A1E81BF0ECFA00D2C29C /* Build configuration list for PBXProject "HabrahabrRSS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2D8A1E41BF0ECFA00D2C29C;
+			productRefGroup = D2D8A1EE1BF0ECFA00D2C29C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2D8A1EC1BF0ECFA00D2C29C /* HabrahabrRSS */,
+				D2D8A2081BF0ECFA00D2C29C /* HabrahabrRSSTests */,
+				D2D8A2131BF0ECFA00D2C29C /* HabrahabrRSSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2D8A1EB1BF0ECFA00D2C29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D8A2031BF0ECFA00D2C29C /* LaunchScreen.storyboard in Resources */,
+				D2D8A2001BF0ECFA00D2C29C /* Assets.xcassets in Resources */,
+				D2D8A1FB1BF0ECFA00D2C29C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D8A2071BF0ECFA00D2C29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D8A2121BF0ECFA00D2C29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2D8A1E91BF0ECFA00D2C29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D8A1FE1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodeld in Sources */,
+				D2D8A1F81BF0ECFA00D2C29C /* ViewController.m in Sources */,
+				D2D8A1F51BF0ECFA00D2C29C /* AppDelegate.m in Sources */,
+				D2D8A1F21BF0ECFA00D2C29C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D8A2051BF0ECFA00D2C29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D8A20E1BF0ECFA00D2C29C /* HabrahabrRSSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D8A2101BF0ECFA00D2C29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D8A2191BF0ECFA00D2C29C /* HabrahabrRSSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2D8A20B1BF0ECFA00D2C29C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D8A1EC1BF0ECFA00D2C29C /* HabrahabrRSS */;
+			targetProxy = D2D8A20A1BF0ECFA00D2C29C /* PBXContainerItemProxy */;
+		};
+		D2D8A2161BF0ECFA00D2C29C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D8A1EC1BF0ECFA00D2C29C /* HabrahabrRSS */;
+			targetProxy = D2D8A2151BF0ECFA00D2C29C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2D8A1F91BF0ECFA00D2C29C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D8A1FA1BF0ECFA00D2C29C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2D8A2011BF0ECFA00D2C29C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D8A2021BF0ECFA00D2C29C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2D8A21B1BF0ECFA00D2C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2D8A21C1BF0ECFA00D2C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2D8A21E1BF0ECFA00D2C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HabrahabrRSS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadchenko.HabrahabrRSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D2D8A21F1BF0ECFA00D2C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HabrahabrRSS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadchenko.HabrahabrRSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D2D8A2211BF0ECFA00D2C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HabrahabrRSSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadchenko.HabrahabrRSSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabrahabrRSS.app/HabrahabrRSS";
+			};
+			name = Debug;
+		};
+		D2D8A2221BF0ECFA00D2C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HabrahabrRSSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadchenko.HabrahabrRSSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabrahabrRSS.app/HabrahabrRSS";
+			};
+			name = Release;
+		};
+		D2D8A2241BF0ECFA00D2C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HabrahabrRSSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadchenko.HabrahabrRSSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HabrahabrRSS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D2D8A2251BF0ECFA00D2C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HabrahabrRSSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipadchenko.HabrahabrRSSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HabrahabrRSS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2D8A1E81BF0ECFA00D2C29C /* Build configuration list for PBXProject "HabrahabrRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D8A21B1BF0ECFA00D2C29C /* Debug */,
+				D2D8A21C1BF0ECFA00D2C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D8A21D1BF0ECFA00D2C29C /* Build configuration list for PBXNativeTarget "HabrahabrRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D8A21E1BF0ECFA00D2C29C /* Debug */,
+				D2D8A21F1BF0ECFA00D2C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2D8A2201BF0ECFA00D2C29C /* Build configuration list for PBXNativeTarget "HabrahabrRSSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D8A2211BF0ECFA00D2C29C /* Debug */,
+				D2D8A2221BF0ECFA00D2C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2D8A2231BF0ECFA00D2C29C /* Build configuration list for PBXNativeTarget "HabrahabrRSSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D8A2241BF0ECFA00D2C29C /* Debug */,
+				D2D8A2251BF0ECFA00D2C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2D8A1FC1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2D8A1FD1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodel */,
+			);
+			currentVersion = D2D8A1FD1BF0ECFA00D2C29C /* HabrahabrRSS.xcdatamodel */;
+			path = HabrahabrRSS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2D8A1E51BF0ECFA00D2C29C /* Project object */;
+}
