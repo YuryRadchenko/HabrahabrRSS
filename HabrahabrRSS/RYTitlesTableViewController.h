@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RYTitlesTableViewController.h
 //  HabrahabrRSS
 //
 //  Created by Yury Radchenko on 09.11.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RYTitlesTableViewController : UITableViewController <UIAlertViewDelegate>
 
 @end
-
