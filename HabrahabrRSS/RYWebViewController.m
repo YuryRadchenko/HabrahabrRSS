@@ -8,35 +8,53 @@
 
 #import "RYWebViewController.h"
 #import "RYButtonBack.h"
+#import "UIWebView+Clean.h"
 
 @interface RYWebViewController ()
 
 @end
 
 @implementation RYWebViewController
-
+{
+    NSURLRequest *_requestArticle;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     _activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     _activityIndicator.hidesWhenStopped = YES;
+    [_activityIndicator startAnimating];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    self.webView.delegate = self;
-    self.webView.backgroundColor = [UIColor lightGrayColor];
+    NSURL *url = [NSURL URLWithString:_articleLink];
+    _requestArticle = [NSURLRequest requestWithURL:url];
     
-    [self loadWebView];
+    self.webView.backgroundColor = [UIColor lightGrayColor];
+    [self setupWebView];
+    [self.webView loadRequest:_requestArticle];
     
     [self setupBackButton];
     
     self.navigationController.navigationBar.translucent = YES;
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self freeMemory];
+    [self.webView cleanForDealloc];
+    self.webView = nil;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    [self freeMemory];
+    [self setupWebView];
+    [self.webView reload];
 }
 
 //MARK: Setups
@@ -49,31 +67,37 @@
 }
 
 //MARK: Actions
-- (void) loadWebView
-{
-    
-    [_activityIndicator startAnimating];
-    self.webView.alpha = 0.0f;
-    NSURL *url = [NSURL URLWithString:_articleLink];
-    NSURLRequest *requestArticle = [NSURLRequest requestWithURL:url];
-    [self.webView loadRequest:requestArticle];
-}
-
 - (void) backAction
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 //MARK: UIWebView delegate
+- (void) setupWebView
+{
+    self.webView.delegate = self;
+}
+
+- (void)freeMemory
+{
+    //[self.webView loadHTMLString:@"" baseURL:nil];
+    [self.webView stopLoading];
+    [self.webView setDelegate:nil];
+    
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    [[NSURLCache sharedURLCache] setDiskCapacity:0];
+    [[NSURLCache sharedURLCache] setMemoryCapacity:0];
+    
+    for(NSHTTPCookie *cookie in [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies])
+    {
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookie];
+    }
+}
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [_activityIndicator stopAnimating];
-    
-    [UIView animateWithDuration:1.5f
-                     animations:^{
-                         webView.alpha = 1.0f;
-                     }
-     ];
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"WebKitCacheModelPreferenceKey"];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error
@@ -101,7 +125,7 @@
     switch (buttonIndex) {
         case 1:
         {
-            [self loadWebView];
+            [self.webView reload];
         }
             break;
             

@@ -36,6 +36,7 @@
 		D2D8A2031BF0ECFA00D2C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D8A2011BF0ECFA00D2C29C /* LaunchScreen.storyboard */; };
 		D2D8A20E1BF0ECFA00D2C29C /* HabrahabrRSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A20D1BF0ECFA00D2C29C /* HabrahabrRSSTests.m */; };
 		D2D8A2191BF0ECFA00D2C29C /* HabrahabrRSSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8A2181BF0ECFA00D2C29C /* HabrahabrRSSUITests.m */; };
+		D2D8F01E1BF62E8600417863 /* UIWebView+Clean.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D8F01D1BF62E8600417863 /* UIWebView+Clean.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		D2D8A2141BF0ECFA00D2C29C /* HabrahabrRSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabrahabrRSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D8A2181BF0ECFA00D2C29C /* HabrahabrRSSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HabrahabrRSSUITests.m; sourceTree = "<group>"; };
 		D2D8A21A1BF0ECFA00D2C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D8F01C1BF62E8600417863 /* UIWebView+Clean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Clean.h"; sourceTree = "<group>"; };
+		D2D8F01D1BF62E8600417863 /* UIWebView+Clean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Clean.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +267,8 @@
 		A870BF3B1BF3910D00D89658 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D2D8F01C1BF62E8600417863 /* UIWebView+Clean.h */,
+				D2D8F01D1BF62E8600417863 /* UIWebView+Clean.m */,
 				A870BF471BF45A6A00D89658 /* RYBackButton */,
 			);
 			name = Library;
@@ -580,6 +585,7 @@
 				A870BE821BF2087600D89658 /* RYCategory.m in Sources */,
 				A870BE7F1BF2087600D89658 /* RYChannel+CoreDataProperties.m in Sources */,
 				D2D8A1F21BF0ECFA00D2C29C /* main.m in Sources */,
+				D2D8F01E1BF62E8600417863 /* UIWebView+Clean.m in Sources */,
 				A870BF3A1BF38A8400D89658 /* RYWebViewController.m in Sources */,
 				A870BE841BF2087600D89658 /* RYGuid.m in Sources */,
 				A870BEDC1BF246A200D89658 /* RYCoreDataManager.m in Sources */,
